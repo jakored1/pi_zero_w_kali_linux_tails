@@ -1,8 +1,7 @@
 # Kali Linux Raspberry Pi Zero W
-So I was trying to setup my Raspberry Pi Zero W with Kali Linux like [this](https://www.kali.org/docs/arm/raspberry-pi-zero-w-pi-tail/):  
-[https://www.kali.org/docs/arm/raspberry-pi-zero-w-pi-tail/](https://www.kali.org/docs/arm/raspberry-pi-zero-w-pi-tail/)  
+So I was trying to setup my Raspberry Pi Zero W with Kali Linux like [this](https://www.kali.org/docs/arm/raspberry-pi-zero-w-pi-tail/)  
   
-But everything worked great, except for the bluetooth tethering which was very important to me.  
+And everything worked great, except for the bluetooth tethering which was very important to me.  
 No matter what I did it didn't seem to work.  
 Eventually I got it working and this is how I did it.  
   
