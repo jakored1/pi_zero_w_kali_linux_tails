@@ -73,7 +73,7 @@ echo '[+] Done!'
 Save this file at /opt/my_scripts/setup_and_connect_bluetooth.sh
   
 But now we want to have this script run automatically on startup, so let's make a service:  
-```sh
+```service
 [Unit]
 Description=Attempts to connect to a device via bluetooth (tethering) on startup
 After=network.target
