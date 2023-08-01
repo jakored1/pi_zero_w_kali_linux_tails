@@ -70,4 +70,29 @@ echo '[+] Setting up bluetooth interface IP address'
 sudo ifconfig bnep0 $BLUETOOTH_INTERFACE_IP netmask $BLUETOOTH_INTERFACE_NETMASK
 echo '[+] Done!'
 ```
-But now we want to have this script run automatically on startup, so let's make a service  
+Save this file at /opt/my_scripts/setup_and_connect_bluetooth.sh
+  
+But now we want to have this script run automatically on startup, so let's make a service:  
+```sh
+[Unit]
+Description=Attempts to connect to a device via bluetooth (tethering) on startup
+After=network.target
+
+[Service]
+ExecStart=/opt/my_scripts/setup_and_connect_bluetooth.sh
+User=root
+Type=oneshot
+
+[Install]
+WantedBy=multi-user.target
+```
+Save this to the file /etc/systemd/system/setup_and_connect_bluetooth.service  
+Then to start the service:  
+```sh
+systemctl daemon-reload  # reload systemd with this new service unit file
+systemctl enable setup_and_connect_bluetooth.service  # enable the service to have it run on startup
+```
+Now after rebooting the Pi Zero W and attempting to connect from your phone like we did before,  
+Everything should work and the Pi Zero W should automatically attempt to connect to your phone  
+
+Enjoy!
