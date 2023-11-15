@@ -1,7 +1,7 @@
 # Kali Linux Raspberry Pi Zero W
 So I was trying to setup my Raspberry Pi Zero W with Kali Linux like [this](https://www.kali.org/docs/arm/raspberry-pi-zero-w/)  
 
-After flashing the image onto the Raspberry Pi Zero W, open the ROOTFS and in the /boot/ directory edit the files (create them if they are not there):
+After flashing the image onto the Raspberry Pi Zero W, open the BOOT (NOT ROOTFS) and edit the files (create them if they are not there):
 - /boot/wpa_supplicant.conf  
 - /boot/interfaces  
 
