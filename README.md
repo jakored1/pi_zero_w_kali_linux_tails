@@ -4,6 +4,13 @@ So I was trying to setup my Raspberry Pi Zero W with Kali Linux like [this](http
 After flashing the image onto the Raspberry Pi Zero W, open the ROOTFS and in the /boot/ directory edit the files (create them if they are not there):
 - /boot/wpa_supplicant.conf
 - /boot/interfaces
+I added example files to the project for reference.  
+You can also create a wpa_supplicant.conf file like so:  
+```sh
+wpa_passphrase YOURNETWORK > wpa_supplicant.conf
+```
+Or create it manually like the reference file.  
+This can allow you to have your device connect to a hotspot/network and get let you communicate with it.  
   
 And everything worked great, except for the bluetooth tethering which was very important to me.  
 No matter what I did it didn't seem to work.  
