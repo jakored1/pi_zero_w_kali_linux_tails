@@ -4,6 +4,7 @@ So I was trying to setup my Raspberry Pi Zero W with Kali Linux like [this](http
 After flashing the image onto the Raspberry Pi Zero W, open the ROOTFS and in the /boot/ directory edit the files (create them if they are not there):
 - /boot/wpa_supplicant.conf  
 - /boot/interfaces  
+
 I added example files to the project for reference.  
 You can also create a wpa_supplicant.conf file like so:  
 ```sh
